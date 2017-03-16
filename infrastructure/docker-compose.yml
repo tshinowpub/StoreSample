@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  web:
+    container_name: store-sample-web
+    build: ./web
+    volumes:
+      - ../:/var/www/html
+    ports:
+      - '80:80'
